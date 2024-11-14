@@ -1,4 +1,10 @@
 /* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -7,19 +13,21 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  .video-container {
+}
+
+.video-container {
     width: 100vw;
-    max-width: 800px;
-    border: 2px solid #333;
-    border-radius: 8px;
+    height: 100vh; /* Chiều cao toàn màn hình */
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    border-radius: 0;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  video {
+    box-shadow: none; /* Bỏ bóng đổ nếu muốn full màn hình thật sự */
+}
+
+video {
     width: 100%;
-    height: auto;
-  }
-  
+    height: 100%; /* Đảm bảo video chiếm toàn bộ chiều cao */
+    object-fit: cover; /* Cắt xén nếu tỷ lệ không khớp */
+}
