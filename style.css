@@ -10,7 +10,7 @@ body {
   }
   
   .video-container {
-    width: 80%;
+    width: 100vw;
     max-width: 800px;
     border: 2px solid #333;
     border-radius: 8px;
